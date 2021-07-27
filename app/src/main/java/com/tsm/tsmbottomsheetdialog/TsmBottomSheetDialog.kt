@@ -8,7 +8,7 @@ import com.tsm.tsmbottomsheetdialog.tsm_bottom_sheet.TsmBaseBottomSheetDialog
 import java.util.*
 
 /**
- * Create by 田守明
+ * Create by tsm
  * on 2021/5/24
  */
 class TsmBottomSheetDialog(context: Activity) : TsmBaseBottomSheetDialog(context) {

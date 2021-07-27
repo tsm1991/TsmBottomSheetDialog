@@ -19,7 +19,7 @@ import com.tsm.tsmbottomsheetdialog.R
 import com.tsm.tsmbottomsheetdialog.tsm_bottom_sheet.TsmBottomSheetBehavior
 
 /**
- * Create by 田守明
+ * Create by tsm
  * on 2021/5/24
  */
 open class BaseBottomSheetDialog : AppCompatDialog {
