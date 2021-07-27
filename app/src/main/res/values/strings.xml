@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TsmBottomSheetDialog</string>
+    <string name="tsm_bottom_sheet">com.tsm.tsmbottomsheetdialog.tsm_bottom_sheet.TsmBottomSheetBehavior</string>
+</resources>
