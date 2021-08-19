@@ -22,7 +22,7 @@
         android:id="@+id/tv_show_recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="使用BottomSheetDialog"
+        android:text="RecyclerView同步背景"
         android:layout_marginTop="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
