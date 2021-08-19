@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="base_zz_dialog_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/zz_common_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/zz_common_dialog_exit</item>
+    </style>
+
+
+
+</resources>
