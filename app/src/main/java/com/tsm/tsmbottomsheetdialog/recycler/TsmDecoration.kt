@@ -1,11 +1,10 @@
-package com.tsm.tsmbottomsheetdialog
+package com.tsm.tsmbottomsheetdialog.recycler
 
 import android.app.ActivityManager
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Canvas
-import android.graphics.drawable.Drawable
 import androidx.recyclerview.widget.RecyclerView
 
 /**
