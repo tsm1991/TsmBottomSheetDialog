@@ -8,4 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="serviceui_status_bar_bg">#33000000</color>
+    <color name="color_ct4">#ff961e</color>
+    <color name="color_ct1_12">#1E000000</color>
+    <color name="color_ct1_20">#33000000</color>
+    <color name="color_ct1_212">#1E000000</color>
+    <color name="color_ct1_40">#66000000</color>
+    <color name="color_ct1_60">#99000000</color>
+    <color name="color_ct1_85">#D8000000</color>
+    <color name="shimmer_color">#ffffff</color>
+    <color name="light_transparent">#F6F6F8</color>
 </resources>

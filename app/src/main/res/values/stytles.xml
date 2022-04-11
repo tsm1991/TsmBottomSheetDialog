@@ -7,6 +7,51 @@
         <item name="android:windowExitAnimation">@anim/zz_common_dialog_exit</item>
     </style>
 
+    <declare-styleable name="ShimmerSkeletonLayout">
+        <attr format="color|reference" name="shimmer_color"/>
+        <attr format="integer|reference" name="shimmer_animation_duration"/>
+        <attr format="boolean|reference" name="shimmer_auto_start"/>
+        <attr format="integer|reference" name="shimmer_angle"/>
+        <attr format="float|reference" name="shimmer_mask_width"/>
+        <attr format="float|reference" name="shimmer_gradient_center_color_width"/>
+        <attr format="boolean|reference" name="shimmer_reverse_animation"/>
+    </declare-styleable>
 
 
+
+    <style name="my_progressbar_style_ver" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progressbar_ver</item>
+    </style>
+    <declare-styleable name="VerticalSeekBar">
+        <attr format="boolean" name="vsb_click_to_set_progress"/>
+        <attr format="dimension" name="vsb_bar_corner_radius"/>
+        <attr format="dimension" name="vsb_bar_width"/>
+        <attr format="reference|color" name="vsb_bar_background"/>
+        <attr format="color" name="vsb_bar_background_gradient_start"/>
+        <attr format="color" name="vsb_bar_background_gradient_end"/>
+        <attr format="reference|color" name="vsb_bar_progress"/>
+        <attr format="color" name="vsb_bar_progress_gradient_start"/>
+        <attr format="color" name="vsb_bar_progress_gradient_end"/>
+        <attr format="integer" name="vsb_progress"/>
+        <attr format="integer" name="vsb_max_value"/>
+        <attr format="enum" name="vsb_min_placeholder_position">
+            <enum name="outside" value="0"/>
+            <enum name="inside" value="1"/>
+            <enum name="middle" value="2"/>
+        </attr>
+        <attr format="reference" name="vsb_min_placeholder_src"/>
+        <attr format="enum" name="vsb_max_placeholder_position">
+            <enum name="outside" value="0"/>
+            <enum name="inside" value="1"/>
+            <enum name="middle" value="2"/>
+        </attr>
+        <attr format="reference" name="vsb_max_placeholder_src"/>
+        <attr format="boolean" name="vsb_show_thumb"/>
+        <attr format="dimension" name="vsb_thumb_container_corner_radius"/>
+        <attr format="color" name="vsb_thumb_container_tint"/>
+        <attr format="integer" name="vsb_thumb_placeholder_src"/>
+        <attr format="boolean" name="vsb_use_thumb_to_set_progress"/>
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+    </declare-styleable>
 </resources>

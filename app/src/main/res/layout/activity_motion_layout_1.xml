@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263"
+    app:layoutDescription="@xml/activity_motion_layout_1_scene"
+    app:showPaths="true"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_bottom_line" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#f00"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:id="@+id/view_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

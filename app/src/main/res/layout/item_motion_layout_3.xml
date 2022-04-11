@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_root"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#263"
+    app:layoutDescription="@xml/activity_motion_layout_3_scene"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <View
+        android:id="@+id/view_click"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#f00"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

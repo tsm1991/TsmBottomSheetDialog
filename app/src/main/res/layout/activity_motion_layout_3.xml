@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263"
+    app:layoutDescription="@xml/activity_motion_layout_3_scene3"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_tsm_3"
+        android:layout_width="170dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="130dp"
+        android:src="@mipmap/img_smartlock_online_physical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

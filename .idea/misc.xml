@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/drawable-v24/top_radius_6.xml" value="0.33611111111111114" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/drawable/progressbar_ver.xml" value="0.29" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/drawable/seek_bar_ver.xml" value="0.22" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/drawable/zhome_toast_bg.xml" value="0.196" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_anim.xml" value="0.17806484295845998" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_main.xml" value="0.17806484295845998" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_motion_layout.xml" value="0.22418478260869565" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_motion_layout_1.xml" value="0.25" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_motion_layout_2.xml" value="0.17806484295845998" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_motion_layout_3.xml" value="0.25" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_pager.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_recycler_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_skeleton_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_tsm_coordinator.xml" value="0.2" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/activity_upvdemo.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/default_skeleton_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/dialog_tsm_bottom_sheet.xml" value="0.17806484295845998" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/item_construction_news_view.xml" value="0.33559782608695654" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/item_construction_progress_calendar_pic.xml" value="0.33559782608695654" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/item_decoration_test.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/item_motion_layout_3.xml" value="0.17806484295845998" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/item_simple_test.xml" value="0.17806484295845998" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/layout_child.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/layout_shimmer.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/layout_toast_base.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/layout_verticalseekbar.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/motion_layout_2.xml" value="0.33" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/scroll_view_activity.xml" value="0.2702806612841215" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/skeleton_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/text_skeleton_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/tsm_record_test.xml" value="0.33559782608695654" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/tsm_title_bar_layout.xml" value="0.23958333333333334" />
+        <entry key="..\:/android/TsmBottomSheetDialog/app/src/main/res/layout/zr_bottom_sheet_dialog_with_bottom.xml" value="0.17806484295845998" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

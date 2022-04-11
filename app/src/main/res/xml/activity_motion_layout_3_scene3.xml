@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+
+        <OnClick motion:targetId="@id/iv_tsm_3"
+            motion:clickAction="transitionToEnd"/>
+
+
+        <KeyAttribute
+            motion:motionTarget="@+id/iv_tsm_3"
+            android:alpha="0.8"
+            motion:framePosition="80"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start"
+        >
+
+        <Constraint
+            android:id="@+id/iv_tsm_3"
+            android:layout_width="170dp"
+            android:layout_height="328dp"
+            android:alpha="1"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="130dp">
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+
+        <Constraint
+            android:id="@+id/iv_tsm_3"
+            android:layout_width="340dp"
+            android:layout_height="656dp"
+            android:alpha="0"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+
+        </Constraint>
+
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="17dp">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_item_construction_new_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="早计划"
+        android:textColor="@color/color_ct4"
+        android:textSize="@dimen/font_5"/>
+
+    <TextView
+        android:id="@+id/tv_item_construction_new_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正常施工：厨卫贴砖、砖墙铺地、防水 今日进展一切顺利"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/color_ct1_60"
+        android:textSize="@dimen/font_6"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_item_construction_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_construction_progress_calendar_pic"
+        app:spanCount="3"
+        android:layout_marginTop="17dp"
+        tools:itemCount="3"/>
+</LinearLayout>

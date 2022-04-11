@@ -16,7 +16,7 @@
     </style>
 
 
-    <style name="bottom_sheet_dilog" parent="Theme.Design.BottomSheetDialog">
+    <style name="bottom_sheet_dilog" parent="Theme.Design.Light.BottomSheetDialog">
 
     </style>
 

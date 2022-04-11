@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".App"
         android:theme="@style/Theme.TsmBottomSheetDialog">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -16,7 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".recycler.RecyclerViewActivity" />
+        <activity android:name=".recycler.RecyclerViewActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".recycler.record.TsmRecordActivity" />
+        <activity android:name=".titlebar.TitlebarActivity" />
+        <activity android:name=".motion_layout.TsmMotionLayoutActivity" />
+        <activity android:name=".motion_layout.MotionLayout1Activity" />
+        <activity android:name=".motion_layout.MotionLayout2Activity" />
+        <activity android:name=".motion_layout.MotionLayout3Activity" />
+        <activity android:name=".skeleton.SkeletonActivity" />
+        <activity android:name=".scroll.ScrollActivity" />
     </application>
 
 </manifest>

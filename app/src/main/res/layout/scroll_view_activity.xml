@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#f00"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="\u2022"/>
+
+        <com.tsm.tsmbottomsheetdialog.scroll.VerticalSeekBar
+            android:id="@+id/mainVerticalSeekBar"
+            android:layout_width="80dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            app:vsb_bar_background="#eeeeee"
+            app:vsb_bar_corner_radius="4dp"
+            android:layout_margin="10dp"
+            app:vsb_bar_width="60dp"
+            app:vsb_bar_progress="@drawable/seek_bar_ver"
+            app:vsb_max_placeholder_position="inside"
+            app:vsb_min_placeholder_position="inside"
+            app:vsb_show_thumb="true"
+            app:vsb_thumb_placeholder_src="@drawable/seek_bar_thum"
+            app:vsb_thumb_container_corner_radius="4dp"
+            app:vsb_use_thumb_to_set_progress="true"
+            app:vsb_click_to_set_progress="true"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#923"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#f00"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

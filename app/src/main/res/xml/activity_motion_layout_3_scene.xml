@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/transition_tsm"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1500">
+       <KeyFrameSet>
+
+           <KeyPosition motion:framePosition="50"
+               motion:motionTarget="@+id/view_click"
+               motion:keyPositionType="parentRelative"
+               motion:sizePercent="0.8"
+
+               >
+           </KeyPosition>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/view_click"
+               android:scaleX="0.8"
+               android:scaleY="0.8"
+               motion:framePosition="33"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/view_click"
+               android:scaleX="1.2"
+               android:scaleY="1.2"
+               motion:framePosition="66"/>
+
+       </KeyFrameSet>
+
+        <OnClick  motion:targetId="@id/view_click"
+            motion:clickAction="transitionToEnd|jumpToStart"/>
+
+    </Transition>
+
+
+<!--    <Transition-->
+<!--        motion:constraintSetEnd="@id/start_reset"-->
+<!--        motion:constraintSetStart="@+id/end"-->
+<!--        motion:duration="500"-->
+<!--        >-->
+<!--        <OnClick  motion:targetId="@id/view_click"-->
+<!--            motion:clickAction="transitionToEnd"/>-->
+<!--    </Transition>-->
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/view_click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent">
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#f00" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/view_click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent">
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#000" />
+        </Constraint>
+    </ConstraintSet>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/start_reset">
+        <Constraint
+            android:id="@+id/view_click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent">
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#f00" />
+        </Constraint>
+    </ConstraintSet>
+
+
+</MotionScene>
