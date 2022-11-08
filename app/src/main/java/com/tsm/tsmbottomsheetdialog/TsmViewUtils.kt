@@ -1,5 +1,7 @@
 package com.tsm.tsmbottomsheetdialog
 
+import android.content.Context
+import android.util.TypedValue
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -38,5 +40,11 @@ fun  TextView?.expandOrCollosed(parentRoot:ViewGroup,boolean: Boolean){
     }else{
         this?.maxLines=100
     }
+}
 
+fun Float.dp2px(context: Context): Float {
+    return TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP,
+        this, context.resources.displayMetrics
+    )
 }

@@ -10,10 +10,15 @@ import android.support.multidex.MultiDex
  */
 class App :Application() {
 
+    companion object{
+       lateinit var instance:App
+    }
+
 
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(base)
         MultiDex.install(this)
+        instance=this
     }
 
 }

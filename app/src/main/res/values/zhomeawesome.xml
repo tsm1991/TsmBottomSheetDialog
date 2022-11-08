@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    选中方式   nor 没有   select->state_Selected      checked->state_Checked   enable->state_Enable   pressed->state_Pressed   -->
+    <attr name="zhome_div_selector">
+        <enum name="nor" value="0" />
+        <enum name="select" value="1" />
+        <enum name="checked" value="2" />
+        <enum name="enable" value="3" />
+        <enum name="pressed" value="4" />
+    </attr>
+
+
+
+
+
+    <!--   设置描边   描边宽度  虚线等属性选中与未选中状态公用 -->
+    <!--    未选中   描边颜色-->
+    <attr name="zhome_div_stroken_color" format="color"/>
+    <!--    选中     描边颜色-->
+    <attr name="zhome_div_select_state_stroken_color" format="color"/>
+
+<!--    未选中与选中    描边宽度-->
+    <attr name="zhome_div_stroken_width" format="dimension"/>
+<!--    未选中与选中    间隔-->
+    <attr name="zhome_div_stroken_dashgap" format="dimension"/>
+<!--    未选中与选中    虚线宽度-->
+    <attr name="zhome_div_stroken_dashwidth" format="dimension"/>
+
+
+
+
+
+
+<!--    背景色-->
+    <!--    未选中  颜色-->
+    <attr name="zhome_div_color" format="color"/>
+    <!--    选中   颜色-->
+    <attr name="zhome_div_select_state_color" format="color"/>
+
+
+
+
+
+
+    <!--    圆角  选中圆角与未选中圆角相同-->
+    <attr name="zhome_div_radius" format="dimension"/>
+<!--    左上圆角-->
+    <attr name="zhome_div_top_left_radius" format="dimension"/>
+<!--    右上圆角-->
+    <attr name="zhome_div_top_right_radius" format="dimension"/>
+<!--    左下圆角-->
+    <attr name="zhome_div_bottom_left_radius" format="dimension"/>
+<!--    右下圆角-->
+    <attr name="zhome_div_bottom_right_radius" format="dimension"/>
+<!--    顶部圆角  左上   右上-->
+    <attr name="zhome_div_top_radius" format="dimension"/>
+<!--    底部圆角  左下 右下-->
+    <attr name="zhome_div_bottom_radius" format="dimension"/>
+
+
+
+
+<!--    渐变色-->
+<!--    渐变色角度-->
+    <attr name="zhome_div_angle" format="integer"/>
+<!--    渐变色开始颜色-->
+    <attr name="zhome_div_start_color" format="color"/>
+<!--    渐变色中间颜色-->
+    <attr name="zhome_div_center_color" format="color"/>
+<!--    渐变色结束颜色-->
+    <attr name="zhome_div_end_color" format="color"/>
+
+
+
+
+<!--    底部横线-->
+    <attr name="zhome_div_bottom_line" format="boolean"/>
+<!--   底部横线边距 部分UI 可能会出现底部横线距离两端存在一定间距-->
+    <attr name="zhome_div_bottom_line_padding" format="dimension"/>
+
+
+<!--    水波纹效果  由于有版本限制,这里使用前景色实现-->
+    <attr name="zhome_div_ripple" format="boolean"/>
+<!--    点击缩放效果-->
+    <attr name="zhome_div_pressed_scale" format="boolean"/>
+
+
+    <declare-styleable name="ZHomeBaseView">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ZHomeConstraintLayout">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+    <declare-styleable name="ZHomeRelativeLayout">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+    
+
+    <declare-styleable name="ZHomeLinearLayout">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+    <declare-styleable name="ZHomeFrameLayout">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ZHomeButton">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+    <declare-styleable name="ZHomeEditText">
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="track_event" format="string"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+    <declare-styleable name="ZHomeTextView">
+        <attr name="zhome_div_select_text_color" format="color"/>
+
+
+        <attr name="zhome_div_selector" />
+        <attr name="zhome_div_radius"/>
+        <attr name="zhome_div_color" />
+        <attr name="zhome_div_select_state_color" />
+        <attr name="zhome_div_stroken_width" />
+        <attr name="zhome_div_stroken_color"/>
+        <attr name="zhome_div_select_state_stroken_color" />
+        <attr name="zhome_div_stroken_dashgap"/>
+        <attr name="zhome_div_stroken_dashwidth"/>
+        <attr name="zhome_div_top_left_radius"/>
+        <attr name="zhome_div_top_right_radius"/>
+        <attr name="zhome_div_bottom_left_radius"/>
+        <attr name="zhome_div_bottom_right_radius"/>
+        <attr name="zhome_div_top_radius"/>
+        <attr name="zhome_div_bottom_radius"/>
+        <attr name="zhome_div_angle"/>
+        <attr name="zhome_div_start_color"/>
+        <attr name="zhome_div_center_color"/>
+        <attr name="zhome_div_end_color"/>
+        <attr name="zhome_div_bottom_line"/>
+        <attr name="zhome_div_ripple"/>
+        <attr name="zhome_div_pressed_scale"/>
+        <attr name="zhome_div_bottom_line_padding"/>
+    </declare-styleable>
+
+
+
+
+
+</resources>

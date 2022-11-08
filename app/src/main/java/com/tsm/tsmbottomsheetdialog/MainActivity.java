@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
         adapter.setOnItemClickListener(this);
         recycler_view_main.setAdapter(adapter);
-        ToastUtils.INSTANCE.showSuccess(this,"成功消息");
+//        ToastUtils.INSTANCE.showSuccess(this,"成功消息");
     }
 
     private List<String> getList() {
