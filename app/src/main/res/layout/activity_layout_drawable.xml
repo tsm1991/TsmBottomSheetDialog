@@ -24,8 +24,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/color_ct1_85"
-                android:text="ZHomeLinearLayout  下划线"/>
-
+                android:text="ZHomeLinearLayout  下划线"
+                app:zhome_div_bottom_line="true"
+                app:zhome_div_bottom_line_padding="16dp"/>
 
         </com.tsm.tsmbottomsheetdialog.drawable.ZHomeLinearLayout>
 
