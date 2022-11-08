@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:orientation="horizontal"
+            app:zhome_div_bottom_line="true"
+            app:zhome_div_bottom_line_padding="16dp">
+
+            <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ct1_85"
+                android:text="ZHomeLinearLayout  下划线"/>
+
+
+        </com.tsm.tsmbottomsheetdialog.drawable.ZHomeLinearLayout>
+
+
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性添加圆角  颜色  描边"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:zhome_div_color="#f00"
+            app:zhome_div_radius="4dp"
+            app:zhome_div_stroken_color="@color/black"
+            app:zhome_div_stroken_width="1dp"
+            />
+
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性按下后改变字体颜色"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:background="@color/black"
+
+            android:textColor="@color/white"
+            app:zhome_div_selector="pressed"
+            app:zhome_div_select_text_color="#f00"/>
+
+
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性添加按下效果"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:zhome_div_selector="pressed"
+            app:zhome_div_color="#f00"
+            app:zhome_div_radius="4dp"
+            app:zhome_div_stroken_width="0.5dp"
+            app:zhome_div_stroken_color="@color/color_ct1_85"
+            app:zhome_div_pressed_scale="true"
+            app:zhome_div_select_text_color="#f00"
+            app:zhome_div_select_state_color="@color/color_ct1_85"
+            app:zhome_div_select_state_stroken_color="#f00"
+            />
+
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logcat tag-->ZHomeDrawableModel 打印缓存复用效果"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:zhome_div_selector="pressed"
+            app:zhome_div_color="#f00"
+            app:zhome_div_radius="4dp"
+            app:zhome_div_stroken_width="0.5dp"
+            app:zhome_div_stroken_color="@color/color_ct1_85"
+            app:zhome_div_pressed_scale="true"
+            app:zhome_div_select_text_color="#f00"
+            app:zhome_div_select_state_color="@color/color_ct1_85"
+            app:zhome_div_select_state_stroken_color="#f00"
+            />
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logcat tag-->ZHomeDrawableModel 打印缓存复用效果"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:zhome_div_selector="pressed"
+            app:zhome_div_color="#f00"
+            app:zhome_div_radius="4dp"
+            app:zhome_div_stroken_width="0.5dp"
+            app:zhome_div_stroken_color="@color/color_ct1_85"
+            app:zhome_div_pressed_scale="true"
+            app:zhome_div_select_text_color="#f00"
+            app:zhome_div_select_state_color="@color/color_ct1_85"
+            app:zhome_div_select_state_stroken_color="#f00"
+            />
+
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logcat tag-->ZHomeDrawableModel 打印缓存复用效果"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:zhome_div_selector="pressed"
+            app:zhome_div_color="#f00"
+            app:zhome_div_radius="4dp"
+            app:zhome_div_stroken_width="0.5dp"
+            app:zhome_div_stroken_color="@color/color_ct1_85"
+            app:zhome_div_pressed_scale="true"
+            app:zhome_div_select_text_color="#f00"
+            app:zhome_div_select_state_color="@color/color_ct1_85"
+            app:zhome_div_select_state_stroken_color="#f00"
+            />
+
+        <com.tsm.tsmbottomsheetdialog.drawable.ZHomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logcat tag-->ZHomeDrawableModel 打印缓存复用效果"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:zhome_div_selector="pressed"
+            app:zhome_div_color="#f00"
+            app:zhome_div_radius="4dp"
+            app:zhome_div_stroken_width="0.5dp"
+            app:zhome_div_stroken_color="@color/color_ct1_85"
+            app:zhome_div_pressed_scale="true"
+            app:zhome_div_select_text_color="#f00"
+            app:zhome_div_select_state_color="@color/color_ct1_85"
+            app:zhome_div_select_state_stroken_color="#f00"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

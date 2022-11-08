@@ -1,35 +1,26 @@
 package com.tsm.tsmbottomsheetdialog;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.SeekBar;
-
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.listener.OnItemClickListener;
-import com.chad.library.adapter.base.viewholder.BaseViewHolder;
-import com.tsm.tsmbottomsheetdialog.motion_layout.TsmMotionLayoutActivity;
-import com.tsm.tsmbottomsheetdialog.recycler.RecyclerViewActivity;
-import com.tsm.tsmbottomsheetdialog.recycler.record.TsmRecordActivity;
-import com.tsm.tsmbottomsheetdialog.scroll.ScrollActivity;
-import com.tsm.tsmbottomsheetdialog.scroll.TsmBean;
-import com.tsm.tsmbottomsheetdialog.skeleton.SkeletonActivity;
-import com.tsm.tsmbottomsheetdialog.statusbar.StatusBarUtils;
-import com.tsm.tsmbottomsheetdialog.titlebar.TitlebarActivity;
-
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.tsm.tsmbottomsheetdialog.drawable.DrawableActivity;
+import com.tsm.tsmbottomsheetdialog.motion_layout.TsmMotionLayoutActivity;
+import com.tsm.tsmbottomsheetdialog.recycler.RecyclerViewActivity;
+import com.tsm.tsmbottomsheetdialog.scroll.ScrollActivity;
+import com.tsm.tsmbottomsheetdialog.skeleton.SkeletonActivity;
+import com.tsm.tsmbottomsheetdialog.statusbar.StatusBarUtils;
+import com.tsm.tsmbottomsheetdialog.titlebar.TitlebarActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnItemClickListener {
 
@@ -59,8 +50,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         ArrayList<String> list = new ArrayList<>();
         list.add("使用BottomSheetDialog");
         list.add("RecyclerView同步背景");
-        list.add("RecyclerView使用技巧");
-        list.add("折叠标题");
+        list.add("组件化Drawable属性使用");
+        list.add("");
         list.add("MotionLayout运动布局");
         list.add("Skeleton 骨架屏");
         list.add("嵌套滑动");
@@ -77,10 +68,9 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                 startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
                 break;
             case 2:
-                startActivity(new Intent(this, TsmRecordActivity.class));
+                startActivity(new Intent(MainActivity.this, DrawableActivity.class));
                 break;
             case 3:
-                startActivity(new Intent(this, TitlebarActivity.class));
                 break;
             case 4:
                 startActivity(new Intent(this, TsmMotionLayoutActivity.class));

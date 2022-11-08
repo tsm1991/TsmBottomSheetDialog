@@ -266,6 +266,7 @@ class ZHomeDrawableModel constructor(){
             }
         }
         ZHomeDrawableCacheHelper.getInstance().cacheDrawable(this,drawable)
+
         Log.i("ZHomeDrawableModel","new drawable from attr, then cache it")
         return drawable
     }

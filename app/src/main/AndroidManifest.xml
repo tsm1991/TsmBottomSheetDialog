@@ -27,6 +27,7 @@
         <activity android:name=".motion_layout.MotionLayout3Activity" />
         <activity android:name=".skeleton.SkeletonActivity" />
         <activity android:name=".scroll.ScrollActivity" />
+        <activity android:name=".drawable.DrawableActivity" />
     </application>
 
 </manifest>

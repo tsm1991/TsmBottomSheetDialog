@@ -3,13 +3,17 @@ package com.tsm.tsmbottomsheetdialog.drawable
 import android.animation.AnimatorInflater
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.util.AttributeSet
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import com.tsm.tsmbottomsheetdialog.R
+import com.tsm.tsmbottomsheetdialog.dp2px
 import com.tsm.tsmbottomsheetdialog.drawable.utils.ZHomeDrawableCreateUtils
 import com.tsm.tsmbottomsheetdialog.drawable.utils.ZHomeDrawableModel
+import com.tsm.tsmbottomsheetdialog.drawable.utils.ZHomeLayerDrawable
 import com.tsm.tsmbottomsheetdialog.drawable.utils.ZHomeRippleDrawable
 
 /**
@@ -90,6 +94,11 @@ open class ZHomeLinearLayout : LinearLayout  {
 
             model?.drawDrawable(context)?.let {
                 background= it
+            }?:apply {
+                if(model.bottomLine){
+                    background=
+                        ZHomeLayerDrawable.getLineDrawable(ColorDrawable(Color.WHITE), Color.LTGRAY,false,0.5f.dp2px(context).toInt(),model.bottomLinePadding.toInt())
+                }
             }
             if(pressedScale){
                 stateListAnimator= AnimatorInflater.loadStateListAnimator(context, R.animator.button_press)
