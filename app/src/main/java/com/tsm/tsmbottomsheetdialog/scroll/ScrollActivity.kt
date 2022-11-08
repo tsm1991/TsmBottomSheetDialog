@@ -29,10 +29,10 @@ class ScrollActivity :AppCompatActivity() {
         var bar= ProgressBar(this)
         bar.max=100
 
-        Intent(this, MainActivity::class.java).apply {
-            putExtra("intent",TsmBean())
-            startActivity(this)
-        }
+//        Intent(this, MainActivity::class.java).apply {
+//            putExtra("intent",TsmBean())
+//            startActivity(this)
+//        }
     }
 
 }
