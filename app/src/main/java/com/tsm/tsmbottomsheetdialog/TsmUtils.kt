@@ -8,5 +8,6 @@ fun Long.divide(divisorNum: Long): String {
     val dividend = BigDecimal.valueOf(this)
     //除数
     val divisor = BigDecimal.valueOf(divisorNum)
+
     return dividend.divide(divisor).toString()
 }
